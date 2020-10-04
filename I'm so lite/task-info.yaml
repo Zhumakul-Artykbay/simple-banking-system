@@ -298,6 +298,25 @@ files:
     if __name__ == '__main__':
         BankingSystem('banking.banking').run_tests()
   learner_created: false
+- name: example.s3db
+  visible: true
+  learner_created: true
+- name: card.s3db
+  visible: true
+  learner_created: true
+- name: banking/__init__.py
+  visible: true
+  learner_created: true
+- name: card.s3db-journal
+  visible: true
+  learner_created: true
+- name: temp.s3db
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/109/stages/593/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/109/stages/593/implement">JetBrains
+    Academy</a>
+  time: Sun, 04 Oct 2020 18:53:31 UTC
 record: -1

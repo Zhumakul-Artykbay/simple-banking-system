@@ -1,7 +1,16 @@
 import random
+import sqlite3
+
+conn = sqlite3.connect('card.s3db')
+
+cur = conn.cursor()
+conn.commit()
+
 dic = {}
 ok = True
+
 while ok:
+
 
     print("""
 1. Create an account
@@ -38,6 +47,8 @@ Your card PIN:
 {PIN}
         """.format(card_number, PIN))
         dic[card_number] = PIN
+        cur.execute(f'INSERT INTO card (number, pin) VALUES ({card_number}, {PIN})')
+        conn.commit()
     elif case == 2:
         print("Enter your card number:")
         input_card_num = input()
